@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header id="home">
+      <h1>Devankshi Ikhar</h1>
+      <p>Web Developer | Data Analyst | Programmer</p>
+      <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="social-icons">
+        <a href="https://github.com/yourgithub" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourlinkedin" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      
+    </header>
+  
+    <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="profile.jpg" alt="Your Photo" />
+      </div>
+      <div class="about-description">
+        <p>Hi! I'm Devankshi Ikhar, Motivated and tech-savvy individual with a solid foundation in programming and data tools. Proficient in C++ with a clear understanding of problem-solving and algorithmic logic. Experienced in building Power BI dashboards for visualizing and interpreting data effectively. Familiar with Python and SQL for basic scripting, automation, and database handling. Strong communication, teamwork, and adaptability skills, with a continuous drive to learn and contribute to innovative projects across software development, analytics, or technology-driven domains</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Flask</li>
+      <li>MS-Excel</li>
+      <li>Power BI</li>
+      <li>Python</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Blinkit Sales Dashboard in Power BI</h3>
+      <img src="project1.png" alt="Project 1" />
+      <p>I created the dashboard using Power BI, with simulated retail data. I analyzed total sales (around $1.2M), average order value, and product distribution across outlet types. Using DAX, I created custom KPIs, and with Power Query, I cleaned and shaped the data. I also added filters by outlet size, item type, and location tier to help users uncover trends like which product categories perform best in Tier-1 cities.</p>
+    </div>
+    <div class="project">
+      <h3>Library Management System </h3>
+      <img src="project2.png" alt="Project 2" />
+      <p>The Library Management System is a full-stack web app I developed using Flask, SQLAlchemy, HTML/CSS. It allows users to register, log in, borrow books (with limits), and view real-time book availability along with images. I handled secure authentication and used SQLAlchemy ORM for database management. It's deployed live on Render [mention link if needed]. The goal was to create a smooth, user-friendly way to manage library operations digitally.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>B.Tech in Information Technology, GHRCE(2022–2026)</p>
+    <p>12th Grade, Dr B.R. Ambedkar College (2022)</p>
+    <p>10th Grade, Bhavan's B.P. Vidya Mandir,Ashti (2020)</p>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <a href="Devankshi_Ikhar_Resume.pdf" download>Download My Resume</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: ikhardevankshi@example.com</p>
+    <p>Phone: +91-1234567890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Devankshi Ikhar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
+
+  
