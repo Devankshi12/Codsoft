@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discover Bali - Travel Destination</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ </head>
+<body>
+  <div class="topbar">
+    <div class="topbar-right">
+      <a href="#highlights">About Bali</a>
+    </div>
+    <div class="topbar-left">
+      <a href="#" class="signin-btn">Sign In</a>
+      <a href="#contact" class="inquiry-btn">Inquiry</a>
+    </div>
+  </div>
+
+  <header class="hero-section">
+    <div class="overlay animate__animated animate__fadeInDown">
+      <h1 class="animate__animated animate__fadeInUp">Discover Bali</h1>
+      <p class="animate__animated animate__fadeInUp animate__delay-1s">Your dream vacation awaits. Explore the beauty, culture, and adventure of Bali!</p>
+      <a href="#contact" class="btn animate__animated animate__fadeInUp animate__delay-2s">Plan Your Trip – Only $499</a>
+    </div>
+  </header>
+
+  <section class="section highlights animate__animated animate__fadeInUp animate__delay-1s">
+    <h2>Why Visit Bali?</h2>
+    <div class="features">
+      <div class="feature animate__animated animate__zoomIn">
+        <h3>Stunning Beaches</h3>
+        <p>Relax on white sands and swim in crystal-clear waters.</p>
+      </div>
+      <div class="feature animate__animated animate__zoomIn animate__delay-1s">
+        <h3>Rich Culture</h3>
+        <p>Experience traditional dances, temples, and local cuisine.</p>
+      </div>
+      <div class="feature animate__animated animate__zoomIn animate__delay-2s">
+        <h3>Adventure Awaits</h3>
+        <p>Surf, hike volcanoes, and explore lush jungles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery animate__animated animate__fadeInUp animate__delay-2s">
+    <h2>Gallery</h2>
+    <div class="gallery-scroll">
+      <button class="scroll-btn left" aria-label="Scroll Left">&#10094;</button>
+      <div class="gallery-track">
+        <div class="item"><img src="diamond beach.jpeg" alt="Bali Beach" class="enlargeable"></div>
+        <div class="item"><img src="temple.jpeg" alt="Bali Temple" class="enlargeable"></div>
+        <div class="item"><img src="jungle.jpeg" alt="Bali Jungle" class="enlargeable"></div>
+        <div class="item"><img src="Garden.jpeg" alt="Bali Garden" class="enlargeable"></div>
+        <div class="item"><img src="travel.jpeg" alt="Bali Travel" class="enlargeable"></div>
+        <div class="item"><img src="Beautiful Bali💗.jpeg" alt="Bali Bracelet" class="enlargeable"></div>
+        <div class="item"><img src="bali_pic.jpeg" alt="Bali Earrings" class="enlargeable"></div>
+        <div class="item"><img src="Bali Travel Bucket List.jpeg" alt="Bali Necklace" class="enlargeable"></div>
+        <!-- Add more images as needed -->
+      </div>
+      <button class="scroll-btn right" aria-label="Scroll Right">&#10095;</button>
+    </div>
+    <!-- Modal for enlarged image -->
+    <div id="img-modal" class="img-modal">
+      <span class="img-modal-close">&times;</span>
+      <img class="img-modal-content" id="img-modal-img" src="" alt="">
+      <!-- <div id="img-modal-caption"></div> -->
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Inquiry</button>
+    </form>
+  </section>
+<section class="section testimonials">
+  <h2>What Travelers Say</h2>
+  <div class="testimonial">
+    <p>"Bali was magical! The beaches and food were amazing."</p>
+    <span>- Alex, USA</span>
+  </div>
+  <div class="testimonial">
+    <p>"A perfect blend of adventure and relaxation."</p>
+    <span>- Priya, India</span>
+  </div>
+</section>
+<div id="signin-modal" class="signin-modal">
+  <div class="signin-modal-content">
+    <span class="signin-modal-close">&times;</span>
+    <h2>Sign In</h2>
+    <form id="signin-form">
+      <div class="input-group">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="Username or Email" required>
+      </div>
+      <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Password" id="signin-password" required>
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+      <button type="submit" class="btn">Sign In</button>
+      <div class="or">or</div>
+      <button type="button" class="btn google-btn"><i class="fab fa-google"></i> Sign in with Google</button>
+    </form>
+  </div>
+</div>
+  <!-- Add in your contact or info section -->
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.0973641418!2d115.0920036!3d-8.3405398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd219b2b6e6b6e1%3A0x3030bfbcaf770b0!2sBali!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid"
+  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  <script src="script.js"></script>
+  <footer>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+    &copy; 2025 Discover Bali. All rights reserved.
+  </footer>
+</body>
+</html>
